@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        scroll-behavior: smooth;
+        /* border: 1px solid red; */
+
+    }
+
+    .home h1 {
+        font-weight: 700;
+        line-height: 140px;
+        animation: slide .8s ease-out forwards;
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-60px);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideTop {
+        from {
+            opacity: 0;
+            transform: translateY(200px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    @keyframes slide {
+        from {
+            opacity: 0;
+            scale: .5;
+        }
+
+        to {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    .header {
+        z-index: 999;
+    }
+</style>
+
+<body
+    class="bg-[url(https://w0.peakpx.com/wallpaper/456/15/HD-wallpaper-black-texture-ultra-aero-patterns-dark-black-pattern-texture.jpg)] bg-fixed bg-cover">
+    <header class="w-full max-md:backdrop-blur-3xl fixed flex justify-center items-center max-lg:justify-between p-3 header">
+
+        <img src="./images/logo.jpg" class="w-22 h-22 object-cover lg:hidden rounded-full" alt="">
+        <input type="checkbox" name="" id="menu" class="peer hidden">
+            <label for="menu" class="cursor-pointer md:hidden ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                    stroke="#FF5E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </label>
+        <nav class="w-max backdrop-blur-3xl animate-[slideDown_0.8s_ease-out_forwards] p-5 rounded-2xl max-md:py-0 flex  max-md:absolute max-md:top-[100%] max-md:right-0 max-md:w-[230px] max-md:bg-black    max-md:h-0 max-md:overflow-hidden max-md:flex-col
+max-md:peer-checked:h-[320px] max-md:peer-checked:flex  max-md:peer-checked:py-5 transition-all duration-300">
+            <ul class="w-full flex gap-7 align-center justify-center max-md:flex-col max-md:justify-center max-md:items-center max-md:w-full">
+                <a href="#home">
+                    <li class="text-white text-[20px] hover:scale-115 transition duration-300">գլխավոր</li>
+                </a>
+                <a href="#aboutus">
+                    <li class="text-white text-[20px] hover:scale-115 transition duration-300">իմ մասին</li>
+                </a>
+                <a href="#services">
+                    <li class="text-white text-[20px] hover:scale-115 transition duration-300">ծառայություններ</li>
+                </a>
+                <a href="#prices">
+                    <li class="text-white text-[20px] hover:scale-115 transition duration-300">գնացուցակ</li>
+                </a>
+                <a href="#contact">
+                    <li class="text-white text-[20px] hover:scale-115 transition duration-300">կոնտակտ</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="bg-black/70">
+        <section id="home"
+            class="home h-screen max-md:h-[60vh] flex flex-col align-center justify-center bg-[url(images/img3.jpg)] bg-cover bg-no-repeat ">
+            <div class="size-full bg-black/70 flex justify-center items-center flex-col">
+                <h1
+                    class="text-center text-8xl max-md:text-7xl w-full flex flex-col px-6 gap-0  bg-gradient-to-r from-gray-950 to-gray-400 italic bg-clip-text text-transparent">
+                    BARBER <span class="text-[100px] max-md:text-7xl ">SEVAK</span></h1>
+                <a href="#regist">
+                    <button
+                        class="text-white mt-6 bg-black w-[180px] p-3 rounded-2xl text-[22px] transition duration-300 hover:scale-115  animate-[slideTop_0.8s_ease-out_forwards]">գրանցվել<i
+                            class="fa-solid fa-arrow-down"></i></button>
+                </a>
+            </div>
+        </section>
+        <section id="aboutus" class="w-full flex flex-col align-center justify-center py-6">
+            <h2 class="w-full text-white text-[45px] flex justify-center align-center">Իմ մասին</h2>
+            <div class="w-full flex justify-evenly max-md:justify-center items-center flex-wrap gap-6 max-lg:flex-col-reverse  max-sm:gap-3 max-md:gap-3 py-15 px-15 max-md:px-2">
+                <p class="text-white max-lg:text-center lg:w-[400px] max-md:w-full max-lg:text-lg text-[25px]">Բարև, ես Սևակն եմ՝ պրոֆեսիոնալ վարսավիր։ Իմ նպատակն է
+                    ապահովել որակյալ սանրվածք և ստեղծել հարմարավետ միջավայր, որտեղ յուրաքանչյուր հաճախորդ իրեն կզգա
+                    վստահ և գնահատված։
+
+                    Եթե ցանկանում եք թարմացնել ձեր տեսքը կամ ընդգծել ձեր անհատական ոճը, սիրով սպասում եմ ձեզ։</p>
+
+                <img src="images/img6.jpg" alt="" class="w-[500px] h-[500px] object-cover">
+            </div>
+            <div class="w-full flex flex-col py-10 justify-center align-center px-15 max-md:px-2">
+                <h3 class="text-white text-[35px] ">իմ աշխատանքները</h3>
+                <div class="w-full grid grid-cols-3 max-lg:grid-cols-3 max-sm:grid-cols-2 py-15 flex-wrap gap-3">
+                    <img src="images/img1.jpg" alt="" class="w-[400px] h-[400px] object-cover rounded-2xl">
+                    <img src="images/img2.jpg" alt="" class="w-[400px] h-[400px] object-cover rounded-2xl">
+                    <img src="images/img4.jpg" alt="" class="w-[400px] h-[400px] object-cover rounded-2xl">
+                    <img src="images/img5.jpg" alt="" class="w-[400px] h-[400px] object-cover rounded-2xl">
+                    <img src="images/img7.jpg" alt="" class="w-[400px] h-[400px] object-cover rounded-2xl">
+                    <img src="images/img8.jpg" alt="" class="w-[400px] h-[400px] object-cover rounded-2xl">
+                </div>
+            </div>
+            <div class="w-full flex flex-col py-10 justify-center align-center px-15 max-md:px-3">
+                <h3 class="w-full text-white text-[45px]  flex justify-center align-center">Ինչու ընտրել ինձ</h3>
+                <div class="w-full grid grid-cols-5 max-lg:grid-cols-3 max-sm:grid-cols-2 py-15 flex-wrap gap-3">
+                    <div
+                        class="border-3 border-gray-800 backdrop-blur-sm border-solid w-full h-[300px] max-md:h-[250px] flex flex-col rounded-2xl  justify-evenly ">
+                        <span class="w-full text-white text-[40px] text-center"><i
+                                class="fa-solid fa-scissors"></i></span>
+                        <h4 class="text-white w-full text-[27px] max-md:text-xl text-center">Փորձառու վարսավիր</h4>
+                    </div>
+                    <div
+                        class="border-3 border-gray-800 backdrop-blur-sm border-solid w-full h-[300px] max-md:h-[250px] flex flex-col rounded-2xl  justify-evenly ">
+                        <span class="w-full text-white text-[40px] text-center"><i
+                                class="fa-solid fa-chart-line"></i></span>
+                        <h4 class="text-white w-full text-[27px] max-md:text-xl text-center">Ժամանակակից սանրվածքներ</h4>
+                    </div>
+                    <div
+                        class="border-3 border-gray-800 backdrop-blur-sm border-solid w-full h-[300px] max-md:h-[250px] flex flex-col rounded-2xl  justify-evenly ">
+                        <span class="w-full text-white text-[40px] text-center"><i class="fa-solid fa-star"></i></span>
+                        <h4 class="text-white w-full text-[27px] max-md:text-xl max-md:text-xl text-center">Բարձրակարգ սպասարկում</h4>
+                    </div>
+                    <div
+                        class="border-3 border-gray-800 backdrop-blur-sm border-solid w-full h-[300px] max-md:h-[250px] flex flex-col rounded-2xl  justify-evenly ">
+                        <span class="w-full text-white text-[40px] text-center"><i
+                                class="fa-solid fa-hand-sparkles"></i></span>
+                        <h4 class="text-white w-full text-[27px] max-md:text-xl text-center">Հիգիենիկ միջավայր</h4>
+                    </div>
+                    <div
+                        class="border-3 border-gray-800 backdrop-blur-sm border-solid w-full h-[300px] max-md:h-[250px] flex flex-col rounded-2xl  justify-evenly ">
+                        <span class="w-full text-white text-[40px] text-center"><i class="fa-solid fa-clock"></i></span>
+                        <h4 class="text-white w-full text-[27px] max-md:text-xl text-center">Արագ սպասարկում</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="w-full flex flex-col  py-6  justify-center align-center">
+            <h2 class="text-white text-[45px]  w-full flex justify-center align-center">Ծառայություններ</h2>
+            <div class="w-full flex justify-center py-15  flex-wrap gap-3">
+                <div
+                    class="border-3 border-black bg-white border-solid w-[200px] h-[240px] flex flex-col rounded-2xl  justify-evenly items-center">
+                    <img src="images/icons/ktrvacq.png" class="w-[60%]">
+                    <h4 class="text-black w-full text-[27px] text-center">Կտրվածքներ</h4>
+                </div>
+                <div
+                    class="border-3 border-black bg-white border-solid w-[200px] h-[240px] flex flex-col rounded-2xl  justify-evenly items-center">
+                    <img src="images/icons/moruq.png" class="w-[60%]">
+                    <h4 class="text-black w-full text-[27px] text-center">Մորուք</h4>
+                </div>
+                <div
+                    class="border-3 border-black bg-white border-solid w-[200px] h-[240px] flex flex-col rounded-2xl  justify-evenly items-center">
+                    <img src="images/icons/fen.png" class="w-[60%]">
+                    <h4 class="text-black w-full text-[27px] text-center">Ֆեն</h4>
+                </div>
+                <div
+                    class="border-3 border-black bg-white border-solid w-[200px] h-[240px] flex flex-col rounded-2xl  justify-evenly items-center">
+                    <img src="images/icons/nerk.png" class="w-[60%]">
+                    <h4 class="text-black w-full text-[27px] text-center">ներկ</h4>
+                </div>
+                <div
+                    class="border-3 border-black bg-white  border-solid w-[200px] h-[240px] flex flex-col rounded-2xl  justify-evenly items-center">
+                    <img src="images/icons/demqixnamq.png" class="w-[60%]">
+                    <h4 class="text-black w-full text-[27px] text-center">դեմքի խնամք</h4>
+                </div>
+                <div
+                    class="border-3 border-black bg-white  border-solid w-[200px] h-[240px] flex flex-col rounded-2xl  justify-evenly items-center">
+                    <img src="images/icons/vosk.png" class="w-[60%]">
+                    <h4 class="text-black w-full text-[27px] text-center">Ոսկ </h4>
+                </div>
+            </div>
+        </section>
+        <section id="prices" class="w-full flex flex-col  py-6 px-3 justify-center align-center">
+            <h2 class="text-white text-[45px]  w-full flex justify-center align-center">գնացուցակ</h2>
+            <div class="w-full flex justify-center py-15  flex-wrap gap-3">
+                <div
+                    class="w-[550px] max-md:w-full h-auto p-3 flex justify-between border-2 border-gray-800 rounded-2xl backdrop-blur-sm">
+                    <span class="text-white text-[30px] max-md:text-lg">Կտրվածքներ</span>
+                    <span class="text-white text-[30px] max-md:text-xl">2000֏</span>
+                </div>
+                <div
+                    class="w-[550px] max-md:w-full h-auto p-3 flex justify-between border-2 border-gray-800 rounded-2xl backdrop-blur-sm">
+                    <span class="text-white text-[30px] max-md:text-lg">Մորուքի Կտրվածք</span>
+                    <span class="text-white text-[30px] max-md:text-xl">2000֏</span>
+                </div>
+                <div
+                    class="w-[550px] max-md:w-full h-auto p-3 flex justify-between border-2 border-gray-800 rounded-2xl backdrop-blur-sm">
+                    <span class="text-white text-[30px] max-md:text-lg">Ֆեն</span>
+                    <span class="text-white text-[30px] max-md:text-xl">1000֏</span>
+                </div>
+                <div
+                    class="w-[550px] max-md:w-full h-auto p-3 flex justify-between border-2 border-gray-800 rounded-2xl backdrop-blur-sm">
+                    <span class="text-white text-[30px] max-md:text-lg">Ներկ</span>
+                    <span class="text-white text-[30px] max-md:text-xl">2000-4000֏</span>
+                </div>
+                <div
+                    class="w-[550px] max-md:w-full h-auto p-3 flex justify-between border-2 border-gray-800 rounded-2xl backdrop-blur-sm">
+                    <span class="text-white text-[30px] max-md:text-lg">Դեմքի խնամք</span>
+                    <span class="text-white text-[30px] max-md:text-xl">3000֏</span>
+                </div>
+                <div
+                    class="w-[550px] max-md:w-full h-auto p-3 flex justify-between border-2 border-gray-800 rounded-2xl backdrop-blur-sm">
+                    <span class="text-white text-[30px] max-md:text-xl">Ոսկ</span>
+                    <span class="text-white text-[30px] max-md:text-xl">1000-2000֏</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full">
+        <section id="contact" class="w-full px-3 flex py-6  justify-center max-md:justify-start align-center flex-wrap gap-10 bg-black">
+            <h2 class="text-white text-[45px] w-full flex justify-center  align-center">Կոնտակտ</h2>
+            <div >
+                <ul class="w-full flex flex-col gap-3">
+                    <li class="text-white text-[30px]"><i class="fa-solid fa-phone"></i>+37493583585</li>
+                    <li class="text-white text-[30px]"><i class="fa-brands fa-instagram"></i><a href="">Instagram</a>
+                    </li>
+                    <li class="text-white text-[30px]"><i class="fa-solid fa-location-dot"></i>Ք․ Աբովյան</li>
+                    <li class="text-white text-[30px]"><i class="fa-solid fa-clock"></i>Երկուշաբթի–ուրբաթ</li>
+
+                </ul>
+            </div>
+            <div class="w-[300px] flex flex-col gap-2 max-sm:w-full" id="regist">
+                <h3 class="text-white text-[30px] w-full">Գրանցում</h3>
+                <div class="w-full flex flex-col gap-3">
+                    <input type="text" class="w-full p-3 border-1 border-white rounded-xl text-white"
+                        placeholder="Անուն">
+                    <input type="tel" class="w-full p-3 border-1 border-white rounded-xl text-white"
+                        placeholder="Հեռախոսահամար">
+                    <div class="w-full flex gap-3">
+                        <input type="date" class="w-[49%] p-3 border-1 border-white rounded-xl text-white">
+                        <input type="time" class="w-[49%] p-3 border-1 border-white rounded-xl text-white">
+                    </div>
+                    <button
+                        class="w-[140px] p-3 rounded-2xl bg-gradient-to-r from-gray-950 to-gray-700 text-white cursor-pointer">Գրանցվել</button>
+                </div>
+            </div>
+            <div class="max-sm:w-full">
+                <iframe class="max-sm:w-full" width="300" height="270px" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0" id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=%20abovyan+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <a href='http://maps-generator.com/ru'>Maps Generator</a>
+                <script type='text/javascript'
+                    src='https://embedmaps.com/google-maps-authorization/script.js?id=c0d48a99d22705951e5eeacccfca7f4fa8872a41'></script>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
